@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Secheli_Stefania_Lab5.Models;
 namespace Secheli_Stefania_Lab5.Models
 {
     public class ExpenseContext : DbContext
@@ -9,6 +10,7 @@ namespace Secheli_Stefania_Lab5.Models
         }
         public DbSet<Expenses> Expense { get; set; }
         public DbSet<ExpenseDTO> ExpenseDTO { get; set; }
+        public DbSet<Budget> Budget { get; set; }
 
     }
 }
